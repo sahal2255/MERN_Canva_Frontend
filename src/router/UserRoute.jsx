@@ -5,6 +5,7 @@ import Login from "../pages/Login";
 import HomePage from "../pages/HomePage";
 import SignUp from "../pages/SignUp";
 import MainLayout from "../Layouts/MainLayouts";
+import HomeSecond from "../pages/HomeSecond";
 
 const UserRoute = () => {
     return (
@@ -16,6 +17,7 @@ const UserRoute = () => {
 
                 <Route element={<MainLayout />}>
                     <Route path="/" element={<HomePage />} />
+                    <Route path="/home" element={<HomeSecond />} />
                 </Route>
             </Routes>
         </BrowserRouter>

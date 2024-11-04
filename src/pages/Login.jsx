@@ -2,6 +2,7 @@ import React from "react";
 import { IoMdClose } from "react-icons/io";
 import { FcGoogle } from "react-icons/fc";
 import { useForm } from "react-hook-form";
+import { UserLogin } from "../Services/SignupServices";
 
 const Login = ({ onClose }) => {
     const {
@@ -10,10 +11,11 @@ const Login = ({ onClose }) => {
         formState: { errors },
     } = useForm();
 
-    const onSubmit = (data) => {
+    const onSubmit = async(data) => {
         console.log(data);
-        // Add your login logic here (e.g., API call)
-        onClose(); // Close the modal on successful login
+        const response=await UserLogin(data)
+        console.log('response in the component ',response)
+        onClose(); 
     };
 
     return (

@@ -7,7 +7,7 @@ const HomePage = () => {
 
     return (
         <>
-            <div className="grid place-items-center p-11 h-full text-center bg-black">
+            <div className="grid place-items-center items-center p-11 h-full text-center bg-black mx-auto">
                 <div>
                     <h1 className="text-white text-4xl font-bold mb-6">
                         Are You Here to Edit the Page?
