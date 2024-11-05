@@ -1,6 +1,7 @@
 // src/pages/HomePage.js
 import React, { useState } from "react";
 import Login from "./Login";
+import HomeBar from "../components/HomeBar";
 
 const HomePage = () => {
     const [showLogin, setShowLogin] = useState(false);

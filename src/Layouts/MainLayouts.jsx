@@ -11,7 +11,7 @@ const MainLayout = () => {
             <Header />
 
             {/* Main content area with Sidebar and Outlet */}
-            <div className="flex flex-1">
+            <div className="flex flex-1 min-h-[90v]">
                 {/* Sidebar */}
                 <SideBar />
 
